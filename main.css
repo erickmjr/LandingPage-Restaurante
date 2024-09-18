@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --fonte-destaque: 'Figtree', 'cursive';
+    --fonte-padrao: 'Poppins', Arial, sans-serif;
+
+    --cor1: #000000;
+    --cor2: #fff;
+    --cor3: #c7b89f;
+    --cor4: #E9D1B7;
+    --cor5: #471B02;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 15px 20px;
+    background-color: var(--cor3);
+    font-family: var(--fonte-destaque);
+}
+
+header h1{
+    font-size: 6vh;
+}
+
+#container-header{
+    display: flex;  
+    align-items: center; 
+    justify-content: space-around;
+}
+
+
+#logo{
+    max-width: 25%;
+    height: 11vw;
+}
+
+
+ul {
+    margin-top: 1.5vw;
+    list-style-type: none;
+}
+
+
+li{
+    display: inline;
+    margin-right: 2vw;
+}
+
+li a{
+    font-size: 2vw;
+}
+
+header a{
+    padding: 7px;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover{
+    padding: 7px;
+    background-color: rgba(255, 255, 255, 0.523);
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+#container-nav{
+    display: flex;
+}
+
+section{
+    font-family: var(--fonte-padrao);
+    background-color: #fff7ea;
+    padding: 1vw 4vw;
+}
+
+section p{
+    margin-left: 1.2vw;
+}
+
+#container-pratos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+#container-pratos h2, section h2{
+    text-align: left;
+    font-size: 2.6vw;
+}
+
+#container-pratos p{
+    font-size: 2vw;
+}
+
+#texto{
+    padding: 1vw;
+}
+
+#texto, #imagem{
+    flex: 1;
+    min-width: 300px;
+}
+
+#imagem{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#imagem img{
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 400px;
+    border: 0.8px solid black;
+}
+
+#logo-list{
+    display: flex;
+}
+
+#logo-list img{
+    display: inline-block;
+    height: auto;
+    max-width: 50px;
+}
+
+#contato{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 5vw;
+}
+
+#container-right{
+    flex: 1;
+}
+
+#container-left{
+    flex: 1;
+}
+
+#formulario{
+    text-align: center;
+}
+
+.botao{
+    background-color: var(--cor3);
+    font-family: var(--fonte-padrao);
+    width: 100%;
+    padding: 1vw;
+    border: none;
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+
+form textarea{
+    background-color: var(--cor3);
+    font-family: var(--fonte-padrao);
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+form button{
+    background-color: var(--cor3);
+    font-family: var(--fonte-padrao);
+    color: var(--cor2);
+    padding: 12px;
+    width: 25%;
+    height: fit-content;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--cor5);
+}
+
+#container-contato{
+    justify-content: center;
+}
+
+footer{
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor5);
+    color: white;
+    padding: 1.5vh;
+}
+
+footer a{
+    color: rgb(164, 148, 126);
+}
+
+footer a:hover{
+
+}
+
+@media (max-width: 1000px){
+    #logo{
+        height: 15vw;
+    }
+
+    header h1{
+        font-size: 4vw;
+    }
+
+    li a{
+        font-size: 2vw;
+    }
+
+    #container-pratos h2{
+        font-size: 3.5vw;
+        text-align: center;
+    }
+
+    section h2{
+        font-size: 3.5vw;
+    }
+
+    #container-pratos p{
+        font-size: 3vw;
+        text-align: center;
+    }
+    #texto, #imagem {
+        flex: 1 1 100%;
+        min-width: 0; 
+    }
+
+    #contato{
+        text-align: center;
+        flex-direction: column;
+    }
+    
+    #contato h2{
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 800px){
+    li a{
+        font-size: 3.2vw;
+    }
+
+    #container-pratos h2{
+        font-size: 4vw;
+        
+    }
+
+    section h2{
+        font-size: 4vw;
+        
+    }
+    
+    .botao{
+        padding: 15px;
+    }
+
+    form textarea{
+        padding: 15px;
+    }
+
+
+}
