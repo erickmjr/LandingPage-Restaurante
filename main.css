@@ -159,6 +159,15 @@ section p{
     text-align: center;
 }
 
+
+::placeholder{
+    color: var(--cor1);
+}
+
+::-webkit-input-placeholder {
+    color: var(--cor1);
+}
+
 .botao{
     background-color: var(--cor3);
     font-family: var(--fonte-padrao);
@@ -170,6 +179,7 @@ section p{
 }
 
 form textarea{
+    color: var(--cor1);
     background-color: var(--cor3);
     font-family: var(--fonte-padrao);
     resize: none;
